@@ -1,0 +1,44 @@
+{
+    "licenses": [
+        {
+            "id": 1,
+            "site_id": "egyweb.local",
+            "licenseKey": "4BDD-2B1D-1B2A-1B33-ACC1-A422-12A4",
+            "start": "04/11/2024",
+            "end": "20/11/2024",
+            "status": 3
+        },
+        {
+            "id": 2,
+            "site_id": "hosnysport.local",
+            "licenseKey": "4BDD-2B1D-1B2A-1B33-ACC1-A422",
+            "start": "01/01/2025",
+            "end": "31/01/2025",
+            "status": 2
+        },
+        {
+            "id": 3,
+            "site_id": "live.coldady.com",
+            "licenseKey": "3BDD-2B1D-1B2A-1B33-ACC1",
+            "start": "01/01/2025",
+            "end": "31/01/2025",
+            "status": 2
+        },
+        {
+            "id": 4,
+            "site_id": "aaramlive.com",
+            "licenseKey": "CA3C-3BD2-ACBD-CCD3-D3D1-3414-C34C",
+            "start": "17/01/2025",
+            "end": "17/02/2025",
+            "status": 2
+        },
+        {
+            "id": 5,
+            "site_id": "teachers-ksa.com",
+            "licenseKey": "4BD1-C1D2-21B1-C2D3-1131-3CC1-21C4",
+            "start": "07/11/2024",
+            "end": "30/04/2025",
+            "status": 2
+        }
+    ]
+}
