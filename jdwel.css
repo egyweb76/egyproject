@@ -1,0 +1,331 @@
+.standings_jdwel {
+    width: 100%;
+    min-width: 600px;
+    margin: 0;
+    text-align: center;
+    border-radius: 2px;
+    position: relative
+}
+
+/* Table */
+
+.tablepress,
+.default_jdwel,
+.scorers_jdwel {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative
+}
+
+.tablepress thead tr,
+.default_jdwel thead tr {
+    background: #fff
+}
+
+.tablepress thead th,
+.default_jdwel thead th {
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    border-bottom: none
+}
+
+.tablepress tbody tr,
+.default_jdwel tbody tr,
+.scorers_jdwel .row {
+    background: rgb(255, 255, 255);
+    border: solid 1px rgb(230, 231, 241);
+}
+
+.tablepress tbody tr:nth-of-type(2n+1),
+.default_jdwel tbody tr:nth-of-type(2n+1),
+.scorers_jdwel .row:nth-of-type(2n+1) {
+    background: rgb(246, 247, 250)
+}
+
+.standings_jdwel tbody td {
+    padding: 6px;
+    text-align: center;
+    font-size: 12px;
+    background: 0;
+    box-shadow: 1px -1px 0 rgb(230, 231, 241);
+    vertical-align: middle;
+}
+
+.is-dark .standings_jdwel tbody td {
+    box-shadow: 1px -1px 0 rgb(55 56 60);
+}
+
+.is-dark .tablepress tbody tr,
+.is-dark .default_jdwel tbody tr,
+.is-dark .scorers_jdwel .row {
+    background: rgb(43 44 51);
+    border: solid 1px rgb(54 55 60);
+}
+
+.is-dark .tablepress tbody tr:nth-of-type(2n+1),
+.is-dark .default_jdwel tbody tr:nth-of-type(2n+1),
+.is-dark .scorers_jdwel .row:nth-of-type(2n+1) {
+    background-color: #191919;
+    border-bottom: 1px solid #0f0f0f;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tablepress th:first-child,
+.default_jdwel th:first-child {
+    border-radius: 0 10px 0 0
+}
+
+.tablepress th:last-child,
+.default_jdwel th:last-child {
+    border-radius: 10px 0 0 0
+}
+
+.tablepress th:only-child,
+.default_jdwel th:only-child {
+    border-radius: 10px 10px 0 0
+}
+
+.tablepress .row-hover tr:hover td,
+.default_jdwel .row-hover tr:hover td {
+    background-color: whitesmoke
+}
+
+.tablepress tbody td,
+.default_jdwel tbody td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px
+}
+
+.player_photo {
+    width: 50px;
+    background: rgb(232, 232, 232);
+    border-radius: 100%
+}
+
+.tablepress .column-2,
+.default_jdwel .photo {
+    width: 80px;
+    text-align: right
+}
+
+.tablepress .column-3,
+.default_jdwel .name {
+    text-align: right;
+    font-weight: 700;
+    font-size: 14px
+}
+
+.tablepress .row-hover tr:hover td,
+.default_jdwel .row-hover tr:hover td {
+    background-color: #f5f5f5
+}
+
+.default_jdwel .logo {
+    text-align: right
+}
+
+/*.standings_jdwel */
+
+table .name svg {
+    display: none;
+}
+
+.table-resp {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px
+}
+
+/*-----------------------*/
+
+
+.standings_jdwel thead th {
+    padding: 10px;
+    text-align: center;
+    border-bottom: none;
+}
+
+.standings_jdwel thead th:first-child {
+    border-radius: 0 10px 0 0
+}
+
+.standings_jdwel thead th:last-child {
+    border-radius: 10px 0 0 0
+}
+
+.standings_jdwel thead th:only-child {
+    border-radius: 10px 10px 0 0
+}
+
+.standings_jdwel tbody td.rank {
+    width: 30px
+}
+
+.standings_jdwel tbody td.team {
+    border-left: 0;
+    font-weight: 700;
+    font-size: 10px;
+    width: 200px;
+    text-align: right;
+    padding-right: 35px
+}
+
+.standings_jdwel .d-md-none {
+    display: none
+}
+
+.club-logo {
+    font-size: 0
+}
+
+.club-logo img {
+    width: 28px;
+    height: 28px;
+}
+
+.scorers_jdwel .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.jdwel_frame .rank {
+    padding-right: 4px;
+    font-size: 1.0rem;
+    font-weight: 500;
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+}
+
+.scorers_jdwel .photo {
+    width: 18%;
+}
+
+.scorers_jdwel .col-6 {
+    flex: 1;
+}
+
+.icon_this {
+    display: none;
+}
+
+.scorers_jdwel .team_name {
+    color: #ac1830;
+}
+
+.scorers_jdwel .badge .club-logo {
+    display: none;
+}
+
+.scorers_jdwel .col-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+    text-align: center;
+}
+
+.scorers_jdwel .row {
+    height: auto;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.scorers_jdwel .player_photo {
+    width: 50%;
+    background: rgb(232, 232, 232);
+    border-radius: 100%;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.scorers_jdwel .player_photo img {
+    /*    width: 50%;*/
+    background: rgb(232, 232, 232);
+    border-radius: 100%;
+    height: auto;
+}
+
+.scorers_jdwel .goals_count span {
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 0;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.scorers_jdwel .col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.row.trow.py-3 {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    border-bottom: 0;
+}
+
+/*Start media By Hosny Egy*/
+
+@media(min-width:768px) {
+    .standings_jdwel td.team {
+        font-size: 1rem !important
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .standings_jdwel tbody td.team {
+        width: auto;
+        text-align: center;
+        padding-right: 0;
+        font-weight: 500;
+    }
+
+    .standings_jdwel thead th {
+        font-size: 12px;
+        padding: 8px 4px
+    }
+
+    th.goal-plus-minus,
+    td.goal-plus-minus, th.diff, td.diff {
+        display: none;
+    }
+
+    .standings_jdwel .d-md-none {
+        display: block
+    }
+
+    .single-jdwelpost .table-is-responsive {
+        margin: 0 -30px !important
+    }
+
+    .single-jdwelgoolpost #the-post .entry-content {
+        margin: 0 -25px
+    }
+
+    .row.trow.py-3 {
+        font-size: 13px
+    }
+
+    .jdwel_frame.scorers_jdwel .row {
+        font-size: 10px;
+        line-height: 14.5px
+    }
+
+    .standings_jdwel .match-left {
+        display: none
+    }
+}
