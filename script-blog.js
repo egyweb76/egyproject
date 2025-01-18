@@ -2,30 +2,37 @@ let matchData = {}; // تعريف متغير لتخزين بيانات المب�
 
 // دالة لجلب بيانات المباريات من ملف JSON
 function loadMatchData() {
-    const repoOwner = 'egyweb76'; // صاحب المستودع
+    // إعداد بيانات المستودع ومسار الملف
+    const repoOwner = 'egyweb76'; // اسم مالك المستودع
     const repoName = 'egyproject'; // اسم المستودع
     const filePath = 'moled-blog.json'; // مسار الملف داخل المستودع
 
-    // بناء رابط ملف raw
+    // بناء رابط Raw للوصول إلى الملف
     const url = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/main/${filePath}`;
 
-    // جلب محتوى السكربت
+    // جلب البيانات من رابط Raw
     fetch(url)
         .then(response => {
+            // تحقق من حالة الاستجابة
             if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
+                throw new Error('Network response was not ok: ' + response.statusText);
             }
             return response.text(); // تحميل النص
         })
-        .then(scriptContent => {
-            const script = document.createElement('script');
-            script.textContent = scriptContent; // إدراج النص ككود JavaScript
-            document.head.appendChild(script); // إضافة السكربت إلى الصفحة
+        .then(decodedContent => {
+            try {
+                const matchesData = JSON.parse(decodedContent); // تحويل النص إلى JSON
+                matchData = matchesData; // تخزين البيانات في المتغير matchData
+                createTabs(); // استدعاء الدالة لإنشاء التابات بعد تحميل البيانات
+            } catch (error) {
+                console.error('فشل في تحويل المحتوى إلى JSON:', error);
+            }
         })
         .catch(error => {
-            console.error('Error loading the script:', error);
+            console.error('فشل في جلب ملف moled-blog.json من المستودع العام:', error);
         });
 }
+
 
 // دالة لتعيين التاب النشط
 function setActiveTab(activeTab) {
