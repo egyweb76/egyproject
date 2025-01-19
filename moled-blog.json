@@ -6954,7 +6954,7 @@
             "caller": "فيصل الهندي",
             "timeStart": "2025/01/19 07:00 PM",
             "timeEnd": "2025/01/19 09:00 PM",
-            "status": "مباشر\n\n                                                                                                            83'",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
@@ -6984,11 +6984,11 @@
             "caller": "احمد البلوشي",
             "timeStart": "2025/01/19 07:30 PM",
             "timeEnd": "2025/01/19 09:30 PM",
-            "status": "مباشر\n\n                                                                                                            50'",
+            "status": "مباشر\n\n                                                                                                            87'",
             "round": "الاسبوع 20",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 1,
                 "team2": 1
             },
             "penalties": {
@@ -7014,12 +7014,12 @@
             "caller": "محمد بركات",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "19:00",
+            "status": "مباشر\n\n                                                                                                            18'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -7044,12 +7044,12 @@
             "caller": "باسم الزير",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "19:00",
+            "status": "مباشر\n\n                                                                                                            19'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -7074,12 +7074,12 @@
             "caller": "محمد مبروكي",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "19:00",
+            "status": "مباشر\n\n                                                                                                            18'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -7104,12 +7104,12 @@
             "caller": "احمد عبده",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "19:00",
+            "status": "مباشر\n\n                                                                                                            18'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 2,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
