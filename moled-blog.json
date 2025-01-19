@@ -6384,7 +6384,7 @@
             "caller": "محمد السعدي",
             "timeStart": "2025/01/19 03:00 PM",
             "timeEnd": "2025/01/19 05:00 PM",
-            "status": "مباشر\n\n                                                                                                            90 + 2'",
+            "status": "انتهت",
             "round": "الاسبوع 20",
             "iframeSrc": "",
             "score": {
@@ -6444,7 +6444,7 @@
             "caller": "محمد مبروكي",
             "timeStart": "2025/01/19 03:00 PM",
             "timeEnd": "2025/01/19 05:00 PM",
-            "status": "مباشر\n\n                                                                                                            89'",
+            "status": "انتهت",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
@@ -6474,11 +6474,11 @@
             "caller": "نوفل باشي",
             "timeStart": "2025/01/19 03:00 PM",
             "timeEnd": "2025/01/19 05:00 PM",
-            "status": "مباشر\n\n                                                                                                            90 + 3'",
+            "status": "انتهت",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": 3,
+                "team1": 4,
                 "team2": 0
             },
             "penalties": {
@@ -6534,7 +6534,7 @@
             "caller": "احمد البلوشي",
             "timeStart": "2025/01/19 04:00 PM",
             "timeEnd": "2025/01/19 06:00 PM",
-            "status": "مباشر\n\n                                                                                                            45 + 5 '",
+            "status": "استراحه",
             "round": "الاسبوع 22",
             "iframeSrc": "",
             "score": {
@@ -6564,11 +6564,11 @@
             "caller": "خليل البلوشي",
             "timeStart": "2025/01/19 04:00 PM",
             "timeEnd": "2025/01/19 06:00 PM",
-            "status": "مباشر\n\n                                                                                                            45 + 5 '",
+            "status": "مباشر\n\n                                                                                                            45 + 11 '",
             "round": "الاسبوع 22",
             "iframeSrc": "",
             "score": {
-                "team1": 2,
+                "team1": 3,
                 "team2": 0
             },
             "penalties": {
@@ -6684,7 +6684,7 @@
             "caller": "محمد السعدي",
             "timeStart": "2025/01/19 04:30 PM",
             "timeEnd": "2025/01/19 06:30 PM",
-            "status": "مباشر\n\n                                                                                                            19'",
+            "status": "مباشر\n\n                                                                                                            25'",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
