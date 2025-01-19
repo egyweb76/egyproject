@@ -3,20 +3,19 @@
 jQuery(document).ready(function ($) {
 
     $("a.ElGadwl .date").each(function () {
-         var t = $(this),
+        var t = $(this),
             a = t.data("start"),
             e = t.data("gameends"),
-            r = moment(a, "YYYY/MM/DD h:mm A").local(), // استخدام التوقيت المحلي
-            n = moment(e, "YYYY/MM/DD h:mm A").local(),
-            s = moment().local().format("YYYY/MM/DD h:mm A"); // توقيت الجهاز
-
-        var m = r.diff(s, "minutes"),
-            o = n.diff(s, "minutes");
+            r = moment(a, "YYYY/MM/DD h:mm A"),
+            n = moment(e, "YYYY/MM/DD h:mm A"),
+            s = moment.utc().format("YYYY/MM/DD h:mm A"),
+            m = r.subtract(2, "hours").diff(s, "minutes"),
+            o = n.subtract(2, "hours").diff(s, "minutes");
 
         switch (true) {
             case m > 30:
-                var i = moment(a, "YYYY/MM/DD h:mm A").local().toDate();
-                t.parent().find(".fc_time").addClass("fc_time_show").text(moment(i).format("LT")),
+               var i = moment.utc(a).subtract(2, "hours").toDate();
+                t.parent().find(".fc_time").addClass("fc_time_show").text(moment(i).format("LT").replace("PM", "PM").replace("AM", "AM")),
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.parent().parent().parent().parent().find(".hoverG div").html("لم تبدأ المباراة بعد"),
                 t.parent().parent().parent().parent().find(".Fareeq-c span.bouton").html(" لم تبدأ "),
@@ -26,21 +25,21 @@ jQuery(document).ready(function ($) {
                 break;
 
             case m > 0:
-                i = moment(a, "YYYY/MM/DD h:mm A").local().toDate(),
-                t.parent().find(".fc_time").addClass("fc_time_show").text(moment(i).format("LT")),
+                i = moment.utc(a).subtract(2, "hours").toDate(),
+                t.parent().find(".fc_time").addClass("fc_time_show").text(moment(i).format("LT").replace("PM", "م").replace("AM", "ص")),
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.parent().parent().parent().parent().find(".Fareeq-c span.bouton").html(" تبدأ قريبا "),
                 t.parent().parent().parent().parent().addClass("started"),
                 t.parents(".egy_sports_item").addClass("soon"),
                 t.parent().parent().parent().parent().find(".hoverG div").html("تبدأ المباراة قريبا"),
                 t.parent().parent().parent().parent().find(".timer-status").remove(),
-                i = moment(a, "YYYY/MM/DD h:mm A").local().toDate(),
+                i = moment.utc(a).subtract(2, "hours").toDate(),
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.countdowntimer({ dateAndTime: i });
                 break;
 
             case o > 0:
-                i = moment(a, "YYYY/MM/DD h:mm A").local().toDate(),
+                i = moment.utc(a).subtract(2, "hours").toDate(),
                 t.parent().find(".result_match").addClass("result_show"),
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.parent().parent().parent().parent().find(".Fareeq-c span.bouton").html("جارية الان"),
@@ -49,12 +48,13 @@ jQuery(document).ready(function ($) {
                 t.parent().parent().parent().parent().find(".timer-status").show(),
                 t.parent().parent().parent().parent().find(".hoverG div").html("شاهد المبارة الان");
                 
+                
                // Add timer and progress bar functionality
                 var timerElement = t.parent().parent().parent().parent().find(".timer");
                 var statusElement = t.parent().parent().parent().parent().find(".status");
                 var progressBarElement = t.parent().parent().parent().parent().find(".progress-bar");
 
-                var startTime = moment.utc(a).subtract(hoursToSubtract, "hours").toDate();
+                var startTime = moment.utc(a).subtract(2, "hours").toDate();
                 var delayEndTime = moment(startTime).add(3, "minutes").toDate();
                 var firstHalfEndTime = moment(delayEndTime).add(45, "minutes").toDate();
                 var halfTimeEndTime = moment(firstHalfEndTime).add(15, "minutes").toDate();
