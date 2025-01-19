@@ -7014,11 +7014,11 @@
             "caller": "محمد بركات",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "مباشر\n\n                                                                                                            75'",
+            "status": "انتهت",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 2,
                 "team2": 0
             },
             "penalties": {
@@ -7044,11 +7044,11 @@
             "caller": "باسم الزير",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "مباشر\n\n                                                                                                            76'",
+            "status": "انتهت",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": 2,
+                "team1": 4,
                 "team2": 0
             },
             "penalties": {
@@ -7074,7 +7074,7 @@
             "caller": "محمد مبروكي",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "مباشر\n\n                                                                                                            77'",
+            "status": "انتهت",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
@@ -7104,11 +7104,11 @@
             "caller": "احمد عبده",
             "timeStart": "2025/01/19 09:00 PM",
             "timeEnd": "2025/01/19 11:00 PM",
-            "status": "مباشر\n\n                                                                                                            76'",
+            "status": "انتهت",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": 3,
+                "team1": 5,
                 "team2": 0
             },
             "penalties": {
@@ -7134,11 +7134,11 @@
             "caller": "بلال علام",
             "timeStart": "2025/01/19 09:45 PM",
             "timeEnd": "2025/01/19 11:45 PM",
-            "status": "مباشر\n\n                                                                                                            45 + 2 '",
+            "status": "مباشر\n\n                                                                                                            60'",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 1,
                 "team2": 0
             },
             "penalties": {
@@ -7164,7 +7164,7 @@
             "caller": "حسن العيدروس",
             "timeStart": "2025/01/19 09:45 PM",
             "timeEnd": "2025/01/19 11:45 PM",
-            "status": "استراحه",
+            "status": "مباشر\n\n                                                                                                            60'",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
@@ -7194,7 +7194,7 @@
             "caller": "منتصر الازهري",
             "timeStart": "2025/01/19 10:00 PM",
             "timeEnd": "2025/01/20 12:00 AM",
-            "status": "مباشر\n\n                                                                                                            33'",
+            "status": "استراحه",
             "round": "الاسبوع 20",
             "iframeSrc": "",
             "score": {
@@ -7313,7 +7313,7 @@
             "btola": "الدوري الإيطالي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/8.png",
             "channel": "ابو ظبي الرياضيه بريميوم",
-            "caller": "",
+            "caller": "ميشيل سعد",
             "timeStart": "2025/01/20 09:45 PM",
             "timeEnd": "2025/01/20 11:45 PM",
             "status": "19:45",
@@ -7343,7 +7343,7 @@
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
             "channel": "بي ان سبورتس 1",
-            "caller": "",
+            "caller": "حسن العيدروس",
             "timeStart": "2025/01/20 10:00 PM",
             "timeEnd": "2025/01/21 12:00 AM",
             "status": "20:00",
@@ -7372,8 +7372,8 @@
             },
             "btola": "الدوري الإسباني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/6.png",
-            "channel": "بي ان سبورتس 2",
-            "caller": "",
+            "channel": "بي ان سبورتس 3",
+            "caller": "احمد فؤاد",
             "timeStart": "2025/01/20 10:00 PM",
             "timeEnd": "2025/01/21 12:00 AM",
             "status": "20:00",
