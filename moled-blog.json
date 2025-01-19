@@ -6414,7 +6414,7 @@
             "caller": "نوفل باشي",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "مباشر\n\n                                                                                                            28'",
+            "status": "مباشر\n\n                                                                                                            45 + 1 '",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
@@ -6684,7 +6684,7 @@
             "caller": "محمد السعدي",
             "timeStart": "2025/01/19 04:30 PM",
             "timeEnd": "2025/01/19 06:30 PM",
-            "status": "مباشر\n\n                                                                                                            90 + 5'",
+            "status": "انتهت",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
@@ -6714,11 +6714,11 @@
             "caller": "حفيظ دراجي",
             "timeStart": "2025/01/19 05:15 PM",
             "timeEnd": "2025/01/19 07:15 PM",
-            "status": "مباشر\n\n                                                                                                            48'",
+            "status": "مباشر\n\n                                                                                                            66'",
             "round": "الاسبوع 20",
             "iframeSrc": "https://yalla36.koora-stream.live/chtv/ch3.php",
             "score": {
-                "team1": 3,
+                "team1": 4,
                 "team2": 1
             },
             "penalties": {
@@ -6744,7 +6744,7 @@
             "caller": "عصام الشوالي",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "مباشر\n\n                                                                                                            24'",
+            "status": "مباشر\n\n                                                                                                            42'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
@@ -6774,11 +6774,11 @@
             "caller": "محمد فوزي",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "مباشر\n\n                                                                                                            27'",
+            "status": "مباشر\n\n                                                                                                            45'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 1,
                 "team2": 0
             },
             "penalties": {
@@ -6804,11 +6804,11 @@
             "caller": "احمد عبده",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "مباشر\n\n                                                                                                            26'",
+            "status": "مباشر\n\n                                                                                                            44'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": 1,
+                "team1": 2,
                 "team2": 0
             },
             "penalties": {
@@ -6834,11 +6834,11 @@
             "caller": "سمير اليعقوبي",
             "timeStart": "2025/01/19 06:15 PM",
             "timeEnd": "2025/01/19 08:15 PM",
-            "status": "مباشر\n\n                                                                                                            12'",
+            "status": "مباشر\n\n                                                                                                            30'",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 1,
                 "team2": 0
             },
             "penalties": {
@@ -6864,11 +6864,11 @@
             "caller": "عبدالله الغامدي",
             "timeStart": "2025/01/19 06:15 PM",
             "timeEnd": "2025/01/19 08:15 PM",
-            "status": "مباشر\n\n                                                                                                            12'",
+            "status": "مباشر\n\n                                                                                                            30'",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 1,
                 "team2": 0
             },
             "penalties": {
@@ -6894,12 +6894,12 @@
             "caller": "علي سعيد الكعبي",
             "timeStart": "2025/01/19 06:30 PM",
             "timeEnd": "2025/01/19 08:30 PM",
-            "status": "16:30",
+            "status": "مباشر\n\n                                                                                                            14'",
             "round": "الاسبوع 22",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -6924,12 +6924,12 @@
             "caller": "محمد السعدي",
             "timeStart": "2025/01/19 06:30 PM",
             "timeEnd": "2025/01/19 08:30 PM",
-            "status": "16:30",
+            "status": "مباشر\n\n                                                                                                            15'",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 1
             },
             "penalties": {
                 "team1": 0,
