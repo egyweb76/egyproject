@@ -8,17 +8,15 @@ jQuery(document).ready(function ($) {
             e = t.data("gameends"),
             r = moment(a, "YYYY/MM/DD h:mm A"),
             n = moment(e, "YYYY/MM/DD h:mm A"),
-            s = moment.utc().format("YYYY/MM/DD h:mm A");
+            s = moment().local().format("YYYY/MM/DD h:mm A"); // توقيت الجهاز
 
         // التحقق مما إذا كان التوقيت الصيفي مفعلًا
-        var hoursToSubtract = 3; // 3 ساعات للتوقيت الصيفي و 2 للشتوي
-
-        var m = r.subtract(hoursToSubtract, "hours").diff(s, "minutes"),
-            o = n.subtract(hoursToSubtract, "hours").diff(s, "minutes");
+        var m = r.diff(s, "minutes"),
+            o = n.diff(s, "minutes");
 
         switch (true) {
             case m > 30:
-                var i = moment.utc(a).subtract(hoursToSubtract, "hours").toDate();
+                var i = moment(a, "YYYY/MM/DD h:mm A").local().toDate();
                 t.parent().find(".fc_time").addClass("fc_time_show").text(moment(i).format("LT").replace("PM", "PM").replace("AM", "AM")),
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.parent().parent().parent().parent().find(".hoverG div").html("لم تبدأ المباراة بعد"),
@@ -29,7 +27,7 @@ jQuery(document).ready(function ($) {
                 break;
 
             case m > 0:
-                i = moment.utc(a).subtract(hoursToSubtract, "hours").toDate(),
+                var i = moment(a, "YYYY/MM/DD h:mm A").local().toDate();
                 t.parent().find(".fc_time").addClass("fc_time_show").text(moment(i).format("LT").replace("PM", "PM").replace("AM", "AM")),
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.parent().parent().parent().parent().find(".Fareeq-c span.bouton").html(" تبدأ قريبا "),
@@ -37,13 +35,13 @@ jQuery(document).ready(function ($) {
                 t.parents(".egy_sports_item").addClass("soon"),
                 t.parent().parent().parent().parent().find(".hoverG div").html("تبدأ المباراة قريبا"),
                 t.parent().parent().parent().parent().find(".timer-status").remove(),
-                i = moment.utc(a).subtract(hoursToSubtract, "hours").toDate(),
+                var i = moment(a, "YYYY/MM/DD h:mm A").local().toDate();
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.countdowntimer({ dateAndTime: i });
                 break;
 
             case o > 0:
-                i = moment.utc(a).subtract(hoursToSubtract, "hours").toDate(),
+                var i = moment(a, "YYYY/MM/DD h:mm A").local().toDate();
                 t.parent().find(".result_match").addClass("result_show"),
                 i = moment(i).format("YYYY/MM/DD h:mm A"),
                 t.parent().parent().parent().parent().find(".Fareeq-c span.bouton").html("جارية الان"),
