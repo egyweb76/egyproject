@@ -6414,7 +6414,7 @@
             "caller": "نوفل باشي",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "مباشر\n\n                                                                                                            45 + 21 '",
+            "status": "مباشر\n\n                                                                                                            45 + 51 '",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
@@ -6714,7 +6714,7 @@
             "caller": "حفيظ دراجي",
             "timeStart": "2025/01/19 05:15 PM",
             "timeEnd": "2025/01/19 07:15 PM",
-            "status": "مباشر\n\n                                                                                                            86'",
+            "status": "انتهت",
             "round": "الاسبوع 20",
             "iframeSrc": "https://yalla36.koora-stream.live/chtv/ch3.php",
             "score": {
@@ -6744,7 +6744,7 @@
             "caller": "عصام الشوالي",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "استراحه",
+            "status": "مباشر\n\n                                                                                                            70'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
@@ -6774,12 +6774,12 @@
             "caller": "محمد فوزي",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "استراحه",
+            "status": "مباشر\n\n                                                                                                            75'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": 1,
-                "team2": 0
+                "team1": 2,
+                "team2": 1
             },
             "penalties": {
                 "team1": 0,
@@ -6804,12 +6804,12 @@
             "caller": "احمد عبده",
             "timeStart": "2025/01/19 06:00 PM",
             "timeEnd": "2025/01/19 08:00 PM",
-            "status": "استراحه",
+            "status": "مباشر\n\n                                                                                                            75'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
                 "team1": 3,
-                "team2": 0
+                "team2": 1
             },
             "penalties": {
                 "team1": 0,
@@ -6834,11 +6834,11 @@
             "caller": "سمير اليعقوبي",
             "timeStart": "2025/01/19 06:15 PM",
             "timeEnd": "2025/01/19 08:15 PM",
-            "status": "استراحه",
+            "status": "مباشر\n\n                                                                                                            59'",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
-                "team1": 1,
+                "team1": 2,
                 "team2": 0
             },
             "penalties": {
@@ -6864,7 +6864,7 @@
             "caller": "عبدالله الغامدي",
             "timeStart": "2025/01/19 06:15 PM",
             "timeEnd": "2025/01/19 08:15 PM",
-            "status": "استراحه",
+            "status": "مباشر\n\n                                                                                                            63'",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
@@ -6894,12 +6894,12 @@
             "caller": "علي سعيد الكعبي",
             "timeStart": "2025/01/19 06:30 PM",
             "timeEnd": "2025/01/19 08:30 PM",
-            "status": "مباشر\n\n                                                                                                            34'",
+            "status": "استراحه",
             "round": "الاسبوع 22",
             "iframeSrc": "",
             "score": {
                 "team1": 0,
-                "team2": 2
+                "team2": 3
             },
             "penalties": {
                 "team1": 0,
@@ -6924,12 +6924,12 @@
             "caller": "محمد السعدي",
             "timeStart": "2025/01/19 06:30 PM",
             "timeEnd": "2025/01/19 08:30 PM",
-            "status": "مباشر\n\n                                                                                                            35'",
+            "status": "استراحه",
             "round": "الاسبوع 18",
             "iframeSrc": "",
             "score": {
                 "team1": 0,
-                "team2": 1
+                "team2": 2
             },
             "penalties": {
                 "team1": 0,
@@ -6954,12 +6954,12 @@
             "caller": "فيصل الهندي",
             "timeStart": "2025/01/19 07:00 PM",
             "timeEnd": "2025/01/19 09:00 PM",
-            "status": "مباشر\n\n                                                                                                            6'",
+            "status": "مباشر\n\n                                                                                                            36'",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
                 "team1": 0,
-                "team2": 1
+                "team2": 2
             },
             "penalties": {
                 "team1": 0,
@@ -6984,12 +6984,12 @@
             "caller": "احمد البلوشي",
             "timeStart": "2025/01/19 07:30 PM",
             "timeEnd": "2025/01/19 09:30 PM",
-            "status": "17:30",
+            "status": "مباشر\n\n                                                                                                            6'",
             "round": "الاسبوع 20",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
