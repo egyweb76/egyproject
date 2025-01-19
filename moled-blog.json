@@ -937,29 +937,29 @@
             }
         },
         {
-            "id": 2147271194,
+            "id": 2147271178,
             "gameUrl": "",
             "postImage": "",
             "fareq1": {
-                "name": "ماميلودي صن داونز",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/1453.png"
-            },
-            "fareq2": {
                 "name": "الجيش الملكي",
                 "logo": "https://cdn.so3ody.com/scores/teams/50x50/16624.png"
             },
+            "fareq2": {
+                "name": "مانيما انيون",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16989.png"
+            },
             "btola": "دوري أبطال إفريقيا",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/236.png",
-            "channel": "بي ان سبورتس 4",
-            "caller": "نوفل باشي",
-            "timeStart": "2025/01/19 06:00 PM",
-            "timeEnd": "2025/01/19 08:00 PM",
-            "status": "16:00",
+            "channel": "بي ان سبورتس 5",
+            "caller": "احمد عبده",
+            "timeStart": "2025/01/04 4:00 PM",
+            "timeEnd": "2025/01/04 6:00 PM",
+            "status": "انتهت",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 2,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
