@@ -6354,12 +6354,12 @@
             "caller": "محمد الشامسي",
             "timeStart": "2025/01/19 01:30 PM",
             "timeEnd": "2025/01/19 03:30 PM",
-            "status": "مباشر\n\n                                                                                                            65'",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
                 "team1": 1,
-                "team2": 0
+                "team2": 1
             },
             "penalties": {
                 "team1": 0,
@@ -6384,12 +6384,12 @@
             "caller": "محمد السعدي",
             "timeStart": "2025/01/19 03:00 PM",
             "timeEnd": "2025/01/19 05:00 PM",
-            "status": "13:00",
+            "status": "مباشر\n\n                                                                                                            42'",
             "round": "الاسبوع 20",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -6444,12 +6444,12 @@
             "caller": "محمد مبروكي",
             "timeStart": "2025/01/19 03:00 PM",
             "timeEnd": "2025/01/19 05:00 PM",
-            "status": "13:00",
+            "status": "مباشر\n\n                                                                                                            42'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -6474,12 +6474,12 @@
             "caller": "نوفل باشي",
             "timeStart": "2025/01/19 03:00 PM",
             "timeEnd": "2025/01/19 05:00 PM",
-            "status": "13:00",
+            "status": "مباشر\n\n                                                                                                            42'",
             "round": "دور المجموعات",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 2,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
