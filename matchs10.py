@@ -314,7 +314,7 @@ def fetch_and_process_matches():
     except Exception as e:
         logging.error(f"Error occurred during data fetching: {e}")
 # fetch_and_process_matches()
-schedule.every(5).minutes.do(fetch_and_process_matches)
+schedule.every(1).minutes.do(fetch_and_process_matches)
 #
 ## جدولة المهمة لتحديث البيانات مرة واحدة يوميًا
 ##schedule.every().day.at("00:05").do(fetch_and_process_matches)
