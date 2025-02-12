@@ -179,25 +179,17 @@ def fetch_and_process_matches():
                         }
 
                     # وقت المباراة
-                    # إذا لم يكن الوقت موجود في status، جلبه من العنصر time-zone
-                    time_element = item.find('div', class_='match-card-wide__time time-zone')
-                    if time_element:
-                        raw_time = time_element.text.strip()
+                    time = item.find('div', class_='match-card-wide__time time-zone')
+                    if time:
+                        raw_time = time.text.strip()
                         if raw_time:
-                            # تحويل الوقت إلى 24 ساعة (إذا كان في عنصر time-zone)
-                            match_time = datetime.strptime(raw_time, "%H:%M")
-
-                            # إضافة ساعتين على الوقت
-                            match_time += timedelta(hours=2)
-
-                            # دمج التاريخ مع الوقت الصحيح
-                            full_start_time = datetime.strptime(date, "%Y/%m/%d") + timedelta(hours=match_time.hour, minutes=match_time.minute)
-                            match_data['timeStart'] = full_start_time.strftime("%Y/%m/%d %I:%M %p")  # تحويل الوقت إلى تنسيق 12 ساعة
-                            full_end_time = full_start_time + timedelta(hours=2)
-                            match_data['timeEnd'] = full_end_time.strftime("%Y/%m/%d %I:%M %p")  # إضافة ساعتين للوقت النهائي
+                            match_data['timeStart'], match_data['timeEnd'] = process_match_time_with_date(raw_time, date)
                         else:
                             logging.info(f"Empty time found for match on date {date}")
                             match_data['timeStart'], match_data['timeEnd'] = "Invalid time", "Invalid time"
+                    else:
+                        logging.info(f"Time element missing for match on date {date}")
+                        match_data['timeStart'], match_data['timeEnd'] = "Invalid time", "Invalid time"
 
 
                     # حالة المباراة
