@@ -4392,12 +4392,12 @@
             "caller": "امير محروس",
             "timeStart": "2025/02/13 2:00 PM",
             "timeEnd": "2025/02/13 4:00 PM",
-            "status": "14:00",
+            "status": "مباشر\n\n                                                                                                            15'",
             "round": "الاسبوع 13",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -4422,12 +4422,12 @@
             "caller": "سعد يحيي",
             "timeStart": "2025/02/13 2:10 PM",
             "timeEnd": "2025/02/13 4:10 PM",
-            "status": "14:10",
+            "status": "مباشر\n\n                                                                                                            3'",
             "round": "الاسبوع 20",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
