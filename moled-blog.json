@@ -6744,12 +6744,12 @@
             "caller": "خليل البلوشي",
             "timeStart": "Invalid time",
             "timeEnd": "Invalid time",
-            "status": "مباشر\n\n                                                                                                            45 + 3 '",
+            "status": "انتهت",
             "round": "الاسبوع 29",
             "iframeSrc": "",
             "score": {
-                "team1": 1,
-                "team2": 1
+                "team1": 2,
+                "team2": 2
             },
             "penalties": {
                 "team1": 0,
@@ -6804,11 +6804,11 @@
             "caller": "حسن العيدروس",
             "timeStart": "Invalid time",
             "timeEnd": "Invalid time",
-            "status": "مباشر\n\n                                                                                                            18'",
+            "status": "انتهت",
             "round": "الملحق",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 7,
                 "team2": 0
             },
             "penalties": {
@@ -6834,12 +6834,12 @@
             "caller": "حفيظ دراجي",
             "timeStart": "Invalid time",
             "timeEnd": "Invalid time",
-            "status": "مباشر\n\n                                                                                                            18'",
+            "status": "انتهت",
             "round": "الملحق",
             "iframeSrc": "",
             "score": {
-                "team1": 1,
-                "team2": 0
+                "team1": 3,
+                "team2": 1
             },
             "penalties": {
                 "team1": 0,
@@ -6864,12 +6864,12 @@
             "caller": "عصام الشوالي",
             "timeStart": "Invalid time",
             "timeEnd": "Invalid time",
-            "status": "مباشر\n\n                                                                                                            18'",
+            "status": "انتهت",
             "round": "الملحق",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
-                "team2": 0
+                "team1": 3,
+                "team2": 1
             },
             "penalties": {
                 "team1": 0,
@@ -6894,14 +6894,14 @@
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
             "channel": "اس اس سي 1",
             "caller": "جعفر الصليح",
-            "timeStart": "2025/02/20 3:15 PM",
-            "timeEnd": "2025/02/20 5:15 PM",
-            "status": "15:15",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 1,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -6924,14 +6924,14 @@
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
             "channel": "اس اس سي اكسترا  2",
             "caller": "عبد العزيز السير",
-            "timeStart": "2025/02/20 3:30 PM",
-            "timeEnd": "2025/02/20 5:30 PM",
-            "status": "15:30",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -6954,14 +6954,14 @@
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
             "channel": "اس اس سي اكسترا  1",
             "caller": "فهد عريشي",
-            "timeStart": "2025/02/20 5:00 PM",
-            "timeEnd": "2025/02/20 7:00 PM",
-            "status": "17:00",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 1,
+                "team2": 3
             },
             "penalties": {
                 "team1": 0,
@@ -6970,66 +6970,6 @@
         }
     ],
     "2025/02/21": [
-        {
-            "id": 2147271634,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "إنبي",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16945.png"
-            },
-            "fareq2": {
-                "name": "سموحة",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16960.png"
-            },
-            "btola": "الدوري المصري",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 2:00 PM",
-            "timeEnd": "2025/02/21 4:00 PM",
-            "status": "14:00",
-            "round": "الاسبوع 15",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
-        {
-            "id": 2147271635,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "فاركو",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/252.png"
-            },
-            "fareq2": {
-                "name": "مودرن سبورت",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/234.png"
-            },
-            "btola": "الدوري المصري",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 2:00 PM",
-            "timeEnd": "2025/02/21 4:00 PM",
-            "status": "14:00",
-            "round": "الاسبوع 15",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
         {
             "id": 2147270499,
             "gameUrl": "",
@@ -7046,14 +6986,14 @@
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
             "channel": "اس اس سي اكسترا  1",
             "caller": "عيسي الحربين",
-            "timeStart": "2025/02/21 2:20 PM",
-            "timeEnd": "2025/02/21 4:20 PM",
-            "status": "14:20",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 2
             },
             "penalties": {
                 "team1": 0,
@@ -7076,14 +7016,14 @@
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
             "channel": "اس اس سي اكسترا  2",
             "caller": "راشد الدوسري",
-            "timeStart": "2025/02/21 3:10 PM",
-            "timeEnd": "2025/02/21 5:10 PM",
-            "status": "15:10",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 2,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
@@ -7106,164 +7046,14 @@
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
             "channel": "اس اس سي 1",
             "caller": "عبدالله الحربي",
-            "timeStart": "2025/02/21 5:00 PM",
-            "timeEnd": "2025/02/21 7:00 PM",
-            "status": "17:00",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
-        {
-            "id": 2147271636,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "بتروجيت",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16949.png"
-            },
-            "fareq2": {
-                "name": "حرس الحدود",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16947.png"
-            },
-            "btola": "الدوري المصري",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 5:00 PM",
-            "timeEnd": "2025/02/21 7:00 PM",
-            "status": "17:00",
-            "round": "الاسبوع 15",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
-        {
-            "id": 2147271637,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "البنك الأهلى",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/239.png"
-            },
-            "fareq2": {
-                "name": "الاتحاد السكندري",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16943.png"
-            },
-            "btola": "الدوري المصري",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 5:00 PM",
-            "timeEnd": "2025/02/21 7:00 PM",
-            "status": "17:00",
-            "round": "الاسبوع 15",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
-        {
-            "id": 2147271846,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "فرايبورغ",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/562.png"
-            },
-            "fareq2": {
-                "name": "فيردر بريمن",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/528.png"
-            },
-            "btola": "الدوري الألماني",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/3.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 7:30 PM",
-            "timeEnd": "2025/02/21 9:30 PM",
-            "status": "19:30",
-            "round": "الاسبوع 23",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
-        {
-            "id": 2147271827,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "ليتشي",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/841.png"
-            },
-            "fareq2": {
-                "name": "أودينيزي",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/794.png"
-            },
-            "btola": "الدوري الإيطالي",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/8.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 7:45 PM",
-            "timeEnd": "2025/02/21 9:45 PM",
-            "status": "19:45",
-            "round": "الاسبوع 26",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
-        {
-            "id": 2147269699,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "ستاد رين",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/578.png"
-            },
-            "fareq2": {
-                "name": "ستاد ريمس",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/591.png"
-            },
-            "btola": "الدوري الفرنسي",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/4.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 7:45 PM",
-            "timeEnd": "2025/02/21 9:45 PM",
-            "status": "19:45",
-            "round": "الاسبوع 23",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 2,
+                "team2": 3
             },
             "penalties": {
                 "team1": 0,
@@ -7284,16 +7074,16 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 8:00 PM",
-            "timeEnd": "2025/02/21 10:00 PM",
-            "status": "20:00",
+            "channel": "بي ان سبورتس 1",
+            "caller": "جواد بده",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 26",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 4
             },
             "penalties": {
                 "team1": 0,
@@ -7314,16 +7104,226 @@
             },
             "btola": "الدوري الإسباني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/6.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
-            "timeStart": "2025/02/21 8:00 PM",
-            "timeEnd": "2025/02/21 10:00 PM",
-            "status": "20:00",
+            "channel": "بي ان سبورتس 3",
+            "caller": "عبدالله الغامدي",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
             "round": "الاسبوع 25",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 1,
+                "team2": 0
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147271827,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "ليتشي",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/841.png"
+            },
+            "fareq2": {
+                "name": "أودينيزي",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/794.png"
+            },
+            "btola": "الدوري الإيطالي",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/8.png",
+            "channel": "ابو ظبي بريميوم 1",
+            "caller": "حازم عبدالسلام",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
+            "round": "الاسبوع 26",
+            "iframeSrc": "",
+            "score": {
+                "team1": 0,
+                "team2": 1
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147271846,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "فرايبورغ",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/562.png"
+            },
+            "fareq2": {
+                "name": "فيردر بريمن",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/528.png"
+            },
+            "btola": "الدوري الألماني",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/3.png",
+            "channel": "بي ان سبورتس 5",
+            "caller": "محمد بركات",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
+            "round": "الاسبوع 23",
+            "iframeSrc": "",
+            "score": {
+                "team1": 5,
+                "team2": 0
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147269699,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "ستاد رين",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/578.png"
+            },
+            "fareq2": {
+                "name": "ستاد ريمس",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/591.png"
+            },
+            "btola": "الدوري الفرنسي",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/4.png",
+            "channel": "بي ان سبورتس 4",
+            "caller": "نوفل الباشي",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
+            "round": "الاسبوع 23",
+            "iframeSrc": "",
+            "score": {
+                "team1": 1,
+                "team2": 0
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147271634,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "إنبي",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16945.png"
+            },
+            "fareq2": {
+                "name": "سموحة",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16960.png"
+            },
+            "btola": "الدوري المصري",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
+            "channel": "اون سبورت 2",
+            "caller": "طارق حسن",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
+            "round": "الاسبوع 15",
+            "iframeSrc": "",
+            "score": {
+                "team1": 1,
+                "team2": 0
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147271635,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "فاركو",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/252.png"
+            },
+            "fareq2": {
+                "name": "مودرن سبورت",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/234.png"
+            },
+            "btola": "الدوري المصري",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
+            "channel": "اون سبورت 1",
+            "caller": "هشام معمر",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
+            "round": "الاسبوع 15",
+            "iframeSrc": "",
+            "score": {
+                "team1": 0,
+                "team2": 0
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147271636,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "بتروجيت",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16949.png"
+            },
+            "fareq2": {
+                "name": "حرس الحدود",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16947.png"
+            },
+            "btola": "الدوري المصري",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
+            "channel": "اون سبورت 2",
+            "caller": "زياد الدكروري",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
+            "round": "الاسبوع 15",
+            "iframeSrc": "",
+            "score": {
+                "team1": 2,
+                "team2": 2
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147271637,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "البنك الأهلى",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/239.png"
+            },
+            "fareq2": {
+                "name": "الاتحاد السكندري",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/16943.png"
+            },
+            "btola": "الدوري المصري",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
+            "channel": "اون سبورت 1",
+            "caller": "محمد الشاذلي",
+            "timeStart": "Invalid time",
+            "timeEnd": "Invalid time",
+            "status": "انتهت",
+            "round": "الاسبوع 15",
+            "iframeSrc": "",
+            "score": {
+                "team1": 3,
+                "team2": 2
             },
             "penalties": {
                 "team1": 0,
@@ -7346,8 +7346,8 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 1",
+            "caller": "حفيظ دراجي",
             "timeStart": "2025/02/22 12:30 PM",
             "timeEnd": "2025/02/22 2:30 PM",
             "status": "12:30",
@@ -7406,8 +7406,8 @@
             },
             "btola": "الدوري الإسباني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/6.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 3",
+            "caller": "أحمد عبده",
             "timeStart": "2025/02/22 1:00 PM",
             "timeEnd": "2025/02/22 3:00 PM",
             "status": "13:00",
@@ -7436,8 +7436,8 @@
             },
             "btola": "الدوري الإيطالي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/8.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "ابو ظبي بريميوم 2",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 2:00 PM",
             "timeEnd": "2025/02/22 4:00 PM",
             "status": "14:00",
@@ -7466,8 +7466,8 @@
             },
             "btola": "الدوري الإيطالي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/8.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "ابو ظبي بريميوم 1",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 2:00 PM",
             "timeEnd": "2025/02/22 4:00 PM",
             "status": "14:00",
@@ -7646,8 +7646,8 @@
             },
             "btola": "الدوري الألماني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/3.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 5",
+            "caller": "علي محمد علي",
             "timeStart": "2025/02/22 2:30 PM",
             "timeEnd": "2025/02/22 4:30 PM",
             "status": "14:30",
@@ -7706,8 +7706,8 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 1",
+            "caller": "عامر الخوذيري",
             "timeStart": "2025/02/22 3:00 PM",
             "timeEnd": "2025/02/22 5:00 PM",
             "status": "15:00",
@@ -7736,8 +7736,8 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "اس اس سي اكسترا  1",
+            "caller": "مصطفى ناظم العلوان",
             "timeStart": "2025/02/22 3:00 PM",
             "timeEnd": "2025/02/22 5:00 PM",
             "status": "15:00",
@@ -7766,8 +7766,8 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس اكسترا 2",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 3:00 PM",
             "timeEnd": "2025/02/22 5:00 PM",
             "status": "15:00",
@@ -7796,8 +7796,8 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 2",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 3:00 PM",
             "timeEnd": "2025/02/22 5:00 PM",
             "status": "15:00",
@@ -7826,8 +7826,8 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس اكسترا 3",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 3:00 PM",
             "timeEnd": "2025/02/22 5:00 PM",
             "status": "15:00",
@@ -7856,8 +7856,8 @@
             },
             "btola": "الدوري الإسباني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/6.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 3",
+            "caller": "عبد الله الغامدي",
             "timeStart": "2025/02/22 3:15 PM",
             "timeEnd": "2025/02/22 5:15 PM",
             "status": "15:15",
@@ -7886,8 +7886,8 @@
             },
             "btola": "الدوري الفرنسي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/4.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 4",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 4:00 PM",
             "timeEnd": "2025/02/22 6:00 PM",
             "status": "16:00",
@@ -7916,8 +7916,8 @@
             },
             "btola": "الدوري الإيطالي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/8.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "ابو ظبي بريميوم 1",
+            "caller": "فيصل الهندي",
             "timeStart": "2025/02/22 5:00 PM",
             "timeEnd": "2025/02/22 7:00 PM",
             "status": "17:00",
@@ -7946,42 +7946,12 @@
             },
             "btola": "الدوري المصري",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/249.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "اون سبورت 1",
+            "caller": "أيمن الكاشف / مؤمن حسن",
             "timeStart": "2025/02/22 5:00 PM",
             "timeEnd": "2025/02/22 7:00 PM",
             "status": "17:00",
             "round": "الاسبوع 15",
-            "iframeSrc": "",
-            "score": {
-                "team1": "0",
-                "team2": "0"
-            },
-            "penalties": {
-                "team1": 0,
-                "team2": 0
-            }
-        },
-        {
-            "id": 2147270498,
-            "gameUrl": "",
-            "postImage": "",
-            "fareq1": {
-                "name": "الاتحاد",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/1257.png"
-            },
-            "fareq2": {
-                "name": "الهلال",
-                "logo": "https://cdn.so3ody.com/scores/teams/50x50/1256.png"
-            },
-            "btola": "دوري روشن السعودي",
-            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
-            "channel": "اس اس سي 1",
-            "caller": "فارس عوض",
-            "timeStart": "2025/02/22 5:30 PM",
-            "timeEnd": "2025/02/22 7:30 PM",
-            "status": "17:30",
-            "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
                 "team1": "0",
@@ -8006,8 +7976,8 @@
             },
             "btola": "الدوري الإنجليزي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/2.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 1",
+            "caller": "عصام الشوالي",
             "timeStart": "2025/02/22 5:30 PM",
             "timeEnd": "2025/02/22 7:30 PM",
             "status": "17:30",
@@ -8036,8 +8006,8 @@
             },
             "btola": "الدوري الإسباني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/6.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 3",
+            "caller": "أحمد البلوشي",
             "timeStart": "2025/02/22 5:30 PM",
             "timeEnd": "2025/02/22 7:30 PM",
             "status": "17:30",
@@ -8066,8 +8036,8 @@
             },
             "btola": "الدوري الألماني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/3.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 5",
+            "caller": "نوفل باشي",
             "timeStart": "2025/02/22 5:30 PM",
             "timeEnd": "2025/02/22 7:30 PM",
             "status": "17:30",
@@ -8096,12 +8066,42 @@
             },
             "btola": "الدوري الفرنسي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/4.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 4",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 6:00 PM",
             "timeEnd": "2025/02/22 8:00 PM",
             "status": "18:00",
             "round": "الاسبوع 23",
+            "iframeSrc": "",
+            "score": {
+                "team1": "0",
+                "team2": "0"
+            },
+            "penalties": {
+                "team1": 0,
+                "team2": 0
+            }
+        },
+        {
+            "id": 2147270498,
+            "gameUrl": "",
+            "postImage": "",
+            "fareq1": {
+                "name": "الاتحاد",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/1257.png"
+            },
+            "fareq2": {
+                "name": "الهلال",
+                "logo": "https://cdn.so3ody.com/scores/teams/50x50/1256.png"
+            },
+            "btola": "دوري روشن السعودي",
+            "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/27.png",
+            "channel": "اس اس سي 1",
+            "caller": "فارس عوض",
+            "timeStart": "2025/02/22 6:15 PM",
+            "timeEnd": "2025/02/22 8:15 PM",
+            "status": "18:15",
+            "round": "الاسبوع 21",
             "iframeSrc": "",
             "score": {
                 "team1": "0",
@@ -8126,8 +8126,8 @@
             },
             "btola": "الدوري الإيطالي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/8.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "ابو ظبي بريميوم 1",
+            "caller": "بلال علام",
             "timeStart": "2025/02/22 7:45 PM",
             "timeEnd": "2025/02/22 9:45 PM",
             "status": "19:45",
@@ -8156,8 +8156,8 @@
             },
             "btola": "الدوري الإسباني",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/6.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 1",
+            "caller": "خليل البلوشي",
             "timeStart": "2025/02/22 8:00 PM",
             "timeEnd": "2025/02/22 10:00 PM",
             "status": "20:00",
@@ -8186,8 +8186,8 @@
             },
             "btola": "الدوري الفرنسي",
             "btolaImage": "https://cdn.so3ody.com/scores/competitions/100x130/4.png",
-            "channel": "لم تحدد بعد",
-            "caller": "غير معروف",
+            "channel": "بي ان سبورتس 4",
+            "caller": "غير متوفر",
             "timeStart": "2025/02/22 8:05 PM",
             "timeEnd": "2025/02/22 10:05 PM",
             "status": "20:05",
