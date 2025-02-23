@@ -8222,7 +8222,7 @@
             "caller": "علي محمد علي",
             "timeStart": "2025/02/23 4:00 PM",
             "timeEnd": "2025/02/23 6:00 PM",
-            "status": "مباشر\n\n                                                                                                            53'",
+            "status": "مباشر\n\n                                                                                                            56'",
             "round": "الاسبوع 26",
             "iframeSrc": "",
             "score": {
@@ -8312,7 +8312,7 @@
             "caller": "أحمد الخير",
             "timeStart": "2025/02/23 4:00 PM",
             "timeEnd": "2025/02/23 6:00 PM",
-            "status": "مباشر\n\n                                                                                                            58'",
+            "status": "مباشر\n\n                                                                                                            61'",
             "round": "الاسبوع 26",
             "iframeSrc": "",
             "score": {
@@ -8342,11 +8342,11 @@
             "caller": "محمد مبروكي",
             "timeStart": "2025/02/23 4:00 PM",
             "timeEnd": "2025/02/23 6:00 PM",
-            "status": "مباشر\n\n                                                                                                            45 + 2 '",
+            "status": "استراحه",
             "round": "الاسبوع 23",
             "iframeSrc": "",
             "score": {
-                "team1": 0,
+                "team1": 1,
                 "team2": 2
             },
             "penalties": {
@@ -8372,7 +8372,7 @@
             "caller": "محمد بركات",
             "timeStart": "2025/02/23 4:00 PM",
             "timeEnd": "2025/02/23 6:00 PM",
-            "status": "مباشر\n\n                                                                                                            58'",
+            "status": "مباشر\n\n                                                                                                            61'",
             "round": "الاسبوع 23",
             "iframeSrc": "",
             "score": {
@@ -8402,7 +8402,7 @@
             "caller": "محمد البوشي",
             "timeStart": "2025/02/23 4:00 PM",
             "timeEnd": "2025/02/23 6:00 PM",
-            "status": "مباشر\n\n                                                                                                            53'",
+            "status": "مباشر\n\n                                                                                                            56'",
             "round": "الاسبوع 15",
             "iframeSrc": "",
             "score": {
@@ -8432,12 +8432,12 @@
             "caller": "أحمد البلوشي",
             "timeStart": "2025/02/23 05:15 PM",
             "timeEnd": "2025/02/23 07:15 PM",
-            "status": "15:15",
+            "status": "مباشر\n\n                                                                                                            2'",
             "round": "الاسبوع 25",
             "iframeSrc": "",
             "score": {
-                "team1": "0",
-                "team2": "0"
+                "team1": 0,
+                "team2": 0
             },
             "penalties": {
                 "team1": 0,
