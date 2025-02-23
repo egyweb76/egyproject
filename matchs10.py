@@ -16,20 +16,46 @@ import logging
 #                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 # دالة لتوليد التواريخ لمدة الشهر الحالي
-def generate_dates():
-    today = datetime.now()
+# دالة لتوليد التواريخ لمدة الشهر الحالي أو الشهر الجديد بدءًا من يوم معين
+def generate_dates(test_day=None, threshold_day=3):
+    """
+    توليد تواريخ الشهر الحالي، مع إضافة تواريخ الشهر الجديد عند تجاوز اليوم المحدد.
+    """
+    today = test_day if test_day else datetime.now()
     year = today.year
     month = today.month
 
-    # الحصول على عدد الأيام في الشهر الحالي
-    _, days_in_month = calendar.monthrange(year, month)
+    # توليد تواريخ الشهر الحالي
+    _, days_in_current_month = calendar.monthrange(year, month)
+    start_of_current_month = datetime(year, month, 1)
+    current_month_dates = [
+        (start_of_current_month + timedelta(days=i)).strftime("%Y/%m/%d")
+        for i in range(days_in_current_month)
+    ]
 
-    # تحديد بداية الشهر
-    start_of_month = datetime(year, month, 1)
+    # إذا كان اليوم الحالي أكبر أو يساوي threshold_day، أضف تواريخ الشهر الجديد
+    if today.day >= threshold_day:
+        next_month = month + 1
+        next_year = year
 
-    # توليد قائمة تواريخ تبدأ من اليوم الأول وحتى اليوم الأخير من الشهر
-    dates = [(start_of_month + timedelta(days=i)).strftime("%Y/%m/%d") for i in range(days_in_month)]
-    return dates
+        if next_month > 12:  # إذا كان الشهر هو يناير من العام الجديد
+            next_month = 1
+            next_year += 1
+
+        _, days_in_next_month = calendar.monthrange(next_year, next_month)
+        start_of_next_month = datetime(next_year, next_month, 1)
+        next_month_dates = [
+            (start_of_next_month + timedelta(days=i)).strftime("%Y/%m/%d")
+            for i in range(days_in_next_month)
+        ]
+    else:
+        next_month_dates = []
+
+    # الجمع بين تواريخ الشهر الحالي والشهر الجديد (إذا لزم الأمر)
+    all_dates = current_month_dates + next_month_dates
+
+    return all_dates
+
 
 # اختبار الكود
 print(generate_dates())
@@ -82,6 +108,36 @@ def process_match_time_with_date(raw_time, match_date):
 # دالة لتنظيف روابط الصور
 def clean_url(url):
     return url.split('?')[0]
+def update_existing_data(existing_data, data_by_date):
+    for date, matches in data_by_date.items():
+        if date in existing_data:
+            print(f"Updating matches for date: {date}")
+            for new_match in matches:
+                match_found = False
+                for old_match in existing_data[date]:
+                    if old_match['id'] == new_match['id']:
+                        print(f"Updating match with ID: {new_match['id']}")
+                        # تحديث القيم المطلوبة فقط
+                        old_match.update({
+                            "caller": new_match.get("caller", old_match["caller"]),
+                            "channel": new_match.get("channel", old_match["channel"]),
+                            "status": new_match.get("status", old_match["status"]),
+                            "score": new_match.get("score", old_match["score"]),
+                            "penalties": new_match.get("penalties", old_match["penalties"]),
+                        })
+                        match_found = True
+                        break
+                if not match_found:
+                    print(f"Adding new match with ID: {new_match['id']}")
+                    # إضافة المباراة الجديدة إذا لم تكن موجودة
+                    existing_data[date].append(new_match)
+        else:
+            print(f"Adding new date: {date}")
+            # إذا لم يكن التاريخ موجودًا، أضف المباريات الجديدة كليًا
+            existing_data[date] = matches
+
+    return existing_data
+
 
 # دالة لتحميل البيانات
 def fetch_and_process_matches():
@@ -116,6 +172,10 @@ def fetch_and_process_matches():
 
                 # تحديث قسم استخراج البيانات داخل fetch_and_process_matches
                 for item in match_items:
+                    time_element = item.find('div', class_='match-card-wide__time time-zone')
+                    raw_time = time_element.text.strip() if time_element else "04:00 PM"
+                    full_start_time, full_end_time = process_match_time_with_date(raw_time, date)
+                   
                     # استخراج رابط المباراة
                     match_link = item.find('a', class_='match-card-wide__btn btn btn--primary')
                     if match_link:
@@ -135,8 +195,8 @@ def fetch_and_process_matches():
                         "btolaImage": btola_image_url,
                         "channel": "",
                         "caller": "",
-                        "timeStart": "",
-                        "timeEnd": "",
+                        "timeStart": full_start_time,
+                        "timeEnd": full_end_time,
                         "status": "",
                         "round": "",
                         "iframeSrc": "",
@@ -179,17 +239,25 @@ def fetch_and_process_matches():
                         }
 
                     # وقت المباراة
-                    time = item.find('div', class_='match-card-wide__time time-zone')
-                    if time:
-                        raw_time = time.text.strip()
+                    # إذا لم يكن الوقت موجودًا في status، جلبه من العنصر time-zone
+                    time_element = item.find('div', class_='match-card-wide__time time-zone')
+                    if time_element:
+                        raw_time = time_element.text.strip()
                         if raw_time:
-                            match_data['timeStart'], match_data['timeEnd'] = process_match_time_with_date(raw_time, date)
+                            # تحويل الوقت إلى 24 ساعة (إذا كان في عنصر time-zone)
+                            match_time = datetime.strptime(raw_time, "%H:%M")
+
+                            # إضافة ساعتين على الوقت
+                            match_time += timedelta(hours=2)
+
+                            # دمج التاريخ مع الوقت الصحيح
+                            full_start_time = datetime.strptime(date, "%Y/%m/%d") + timedelta(hours=match_time.hour, minutes=match_time.minute)
+                            match_data['timeStart'] = full_start_time.strftime("%Y/%m/%d %I:%M %p")  # تحويل الوقت إلى تنسيق 12 ساعة
+                            full_end_time = full_start_time + timedelta(hours=2)
+                            match_data['timeEnd'] = full_end_time.strftime("%Y/%m/%d %I:%M %p")  # إضافة ساعتين للوقت النهائي
                         else:
                             logging.info(f"Empty time found for match on date {date}")
                             match_data['timeStart'], match_data['timeEnd'] = "Invalid time", "Invalid time"
-                    else:
-                        logging.info(f"Time element missing for match on date {date}")
-                        match_data['timeStart'], match_data['timeEnd'] = "Invalid time", "Invalid time"
 
 
                     # حالة المباراة
@@ -248,7 +316,6 @@ def fetch_and_process_matches():
                             "team2": 0
                         }
 
-
                     # التعامل مع التحديثات فقط للحقول caller و status و score
                     match_found = False
                     if date in existing_data:
@@ -271,32 +338,9 @@ def fetch_and_process_matches():
             data_by_date[date] = sorted(data_by_date[date], key=lambda x: datetime.strptime(x['timeStart'], "%Y/%m/%d %I:%M %p") if x['timeStart'] != "Invalid time" else datetime.max)
 
         # دمج البيانات الجديدة مع البيانات القديمة
-        for date, matches in data_by_date.items():
-            if date in existing_data:
-                for new_match in matches:
-                    match_found = False
-                    for old_match in existing_data[date]:
-                        if old_match['id'] == new_match['id']:  # تحقق من وجود المباراة
-                            # تحديث القيم المطلوبة فقط
-                            old_match.update({
-                                "caller": new_match.get("caller", old_match["caller"]),
-                                "channel": new_match.get("channel", old_match["channel"]),
-                                "status": new_match.get("status", old_match["status"]),
-                                "score": new_match.get("score", old_match["score"]),
-                                "penalties": new_match.get("penalties", old_match["penalties"]),  # تحديث الضربات الترجيحية
-                            })
-                            # الحفاظ على حقل الوقت دون تغييره
-                            old_match["time"] = old_match["time"]
-                            match_found = True
-                            break
-                    if not match_found:
-                        # إذا لم يتم العثور على المباراة، أضفها كمدخل جديد
-                        existing_data[date].append(new_match)
-            else:
-                # إذا لم يكن التاريخ موجودًا في البيانات القديمة، أضف جميع المباريات الجديدة
-                existing_data[date] = matches
+        existing_data = update_existing_data(existing_data, data_by_date)
 
-
+       
         # كتابة البيانات إلى ملف JSON
         with open('moled-blog.json', 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, indent=4, ensure_ascii=False)
@@ -305,13 +349,13 @@ def fetch_and_process_matches():
 
     except Exception as e:
         logging.error(f"Error occurred during data fetching: {e}")
-# fetch_and_process_matches()
+
 schedule.every(1).minutes.do(fetch_and_process_matches)
-#
-## جدولة المهمة لتحديث البيانات مرة واحدة يوميًا
-##schedule.every().day.at("00:05").do(fetch_and_process_matches)
-#
-## بدء حلقة التكرار
+
+# جدولة المهمة لتحديث البيانات مرة واحدة يوميًا
+#schedule.every().day.at("00:05").do(fetch_and_process_matches)
+
+# بدء حلقة التكرار
 while True:
     schedule.run_pending()
-    time.sleep(60)
+    time.sleep(1)
