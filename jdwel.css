@@ -249,7 +249,10 @@ table .name svg {
     object-fit: contain;
     min-height: 80px;
 }
-
+div#result-soccer, div#result-jdwel {
+    text-align: center;
+    margin: auto;
+}
 .scorers_jdwel .player_photo img {
     /*    width: 50%;*/
     background: rgb(232, 232, 232);
