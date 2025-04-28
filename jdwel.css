@@ -251,7 +251,7 @@ table .name svg {
 }
 div#result-soccer, div#result-jdwel {
     text-align: center;
-    margin: auto;
+    margin: 0 auto 10px;
 }
 .scorers_jdwel .player_photo img {
     /*    width: 50%;*/
