@@ -196,8 +196,6 @@ table .name svg {
 .scorers_jdwel .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .jdwel_frame .rank {
@@ -237,7 +235,8 @@ table .name svg {
 .scorers_jdwel .row {
     height: auto;
     align-items: center;
-    padding: 7px 0;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .scorers_jdwel .player_photo {
