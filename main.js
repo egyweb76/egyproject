@@ -46,74 +46,64 @@ function startTimer(showTime, hideTime, iframeSrc) {
 }
 ////////////////////////////////////////////////////////////
 // ملف fetch-element.js دالة عرض ترتيب الفرق والهدافين
- async function loadTable(link) {
-     try {
-         // جلب البيانات من الرابط المتغير
-         const response = await fetch(link);
-         const standings = await response.json();
 
-         if (!Array.isArray(standings) || standings.length === 0) {
-             console.error('لا توجد بيانات للترتيب.');
-             return;
-         }
+// الدالة لجلب وعرض العنصر تلقائيًا
+async function fetchElement(url, elementType, elementIdOrClass = '') {
+  // إعداد المحدد (selector) بناءً على نوع العنصر وclass أو id
+  let selector = elementType;
+  if (elementIdOrClass) {
+    if (elementIdOrClass.startsWith("#") || elementIdOrClass.startsWith(".")) {
+      selector += elementIdOrClass;
+    } else {
+      selector += elementIdOrClass.includes(" ") ? `.${elementIdOrClass}` : `#${elementIdOrClass}`;
+    }
+  }
 
-         // إضافة الجدول داخل الـ div مباشرة
-         const resultDiv = document.getElementById('result-jdwel');
-         resultDiv.innerHTML = `
-            <table class="standings_jdwel">
-                <thead>
-                    <tr>
-                        <th colspan="3" class="team">فريق</th>
-                        <th class="pld">لعب</th>
-                        <th class="won">فاز</th>
-                        <th class="draw">تعادل</th>
-                        <th class="lost">خسر</th>
-                        <th class="match-left">متبقي</th>
-                        <th class="goal-plus-minus" role="gridcell" aria-label="له وعليه">+/-</th>
-                        <th class="diff">فرق</th>
-                        <th class="pts">نقاط</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    <!-- سيتم تعبئة الجدول هنا تلقائياً -->
-                </tbody>
-            </table>
-        `;
+  try {
+    const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`);
 
-         const tbody = document.getElementById('table-body');
-         standings.forEach((team, index) => {
-             const remainingMatches = 38 - parseInt(team.played);
-             const diffGoals = parseInt(team.goals_for) - parseInt(team.goals_against);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-             const rowClass = (index % 2 === 0) ? 'odd' : 'even';
+    const data = await response.json();
+    const text = data.contents;
 
-             const row = `
-                <tr id="o_${index + 1}" class="${rowClass}">
-                    <td class="rank">
-                        <div class="rank_guide" style="background-color:#037aff"></div> 
-                        <span>${team.rank}</span>
-                    </td>
-                    <td class="team_logo">
-                        <img src="${team.team_logo}" width="30" height="30" loading="lazy">
-                    </td>
-                    <td class="team">
-                        <div>${team.team}</div>
-                    </td>
-                    <td class="pld">${team.played}</td>
-                    <td class="won">${team.wins}</td>
-                    <td class="draw">${team.draws}</td>
-                    <td class="lost">${team.losses}</td>
-                    <td class="match-left">${remainingMatches}</td>
-                    <td class="goal-plus-minus">
-                        <span class="goal-minus">${team.goals_against}</span>:<span class="goal-plus">${team.goals_for}</span>
-                    </td>
-                    <td class="diff">${diffGoals}</td>
-                    <td class="pts"><strong>${team.points}</strong></td>
-                </tr>
-            `;
-             tbody.insertAdjacentHTML('beforeend', row);
-         });
-     } catch (error) {
-         console.error('خطأ أثناء جلب بيانات الترتيب:', error);
-     }
- }
+    // تحويل النص إلى DOM
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/html');
+
+    // البحث عن العنصر باستخدام المحدد
+    const element = doc.querySelector(selector);
+
+    if (element) {
+      // تعديل روابط الصور وتحويل الروابط النسبية إلى مطلقة
+      const images = element.querySelectorAll('img');
+      images.forEach(img => {
+        // تحويل الروابط النسبية إلى مطلقة
+        if (img.src.startsWith('/')) {
+          img.src = `https://jdwel.com${img.src}`;
+        }
+        // تمرير الروابط من خلال الوكيل
+        img.src = `https://api.allorigins.win/raw?url=${encodeURIComponent(img.src)}`;
+
+        // إزالة خاصية alt لتجنب التأثير على العرض
+        img.removeAttribute('alt');
+
+        // إضافة صورة بديلة في حالة عدم تحميل الصورة الأصلية
+        img.onerror = function() {
+          this.src = 'https://media.gemini.media/img/yallakora/IOSTeams/YK-Generic-team-logo.png'; // رابط الصورة البديلة
+        };
+      });
+
+      // إظهار العنصر في صفحة HTML
+      document.getElementById('result-element').innerHTML = element.outerHTML;
+    } else {
+      document.getElementById('result-element').innerHTML = "العنصر غير موجود!";
+    }
+  } catch (error) {
+    console.error("Error fetching the element: ", error);
+    document.getElementById('result-element').innerHTML = "حدث خطأ أثناء جلب العنصر!";
+  }
+}
+
