@@ -58,7 +58,15 @@
     box-shadow: 1px -1px 0 rgb(230, 231, 241);
     vertical-align: middle;
 }
-
+h3.group-title {
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.is-dark h3.group-title {
+    background: #131313;
+}
 .is-dark .standings_jdwel tbody td {
     box-shadow: 1px -1px 0 rgb(55 56 60);
 }
