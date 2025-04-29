@@ -60,9 +60,11 @@
 }
 h3.group-title {
     text-align: right;
+    background: #e6e4e4;
     padding: 10px;
     border-radius: 10px;
     margin-top: 15px;
+    margin-bottom: 5px;
 }
 .is-dark h3.group-title {
     background: #131313;
