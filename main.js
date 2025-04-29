@@ -167,3 +167,71 @@ function startTimer(showTime, hideTime, iframeSrc) {
         console.error('خطأ أثناء جلب بيانات الهدافين:', error);
     }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+async function loadTable_groups(link) {
+    try {
+        const response = await fetch(link);
+        const groupsData = await response.json();
+
+        if (!Array.isArray(groupsData) || groupsData.length === 0) {
+            console.error('لا توجد بيانات للترتيب.');
+            return;
+        }
+
+        const resultDiv = document.getElementById('result-jdwel');
+        resultDiv.innerHTML = '';
+
+        groupsData.forEach(group => {
+            const groupName = group.group_name || 'بدون اسم مجموعة';
+            const teams = group.teams || [];
+
+            const groupTable = `
+                <h3 class="group-title">${groupName}</h3>
+                <table class="standings_jdwel mb-4">
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="team">فريق</th>
+                            <th class="pld">لعب</th>
+                            <th class="won">فاز</th>
+                            <th class="draw">تعادل</th>
+                            <th class="lost">خسر</th>
+                            <th class="match-left">متبقي</th>
+                            <th class="goal-plus-minus">+/-</th>
+                            <th class="diff">فرق</th>
+                            <th class="pts">نقاط</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${teams.map((team, index) => {
+                            const remainingMatches = 38 - parseInt(team.played);
+                            const diffGoals = parseInt(team.goals_for) - parseInt(team.goals_against);
+                            const rowClass = (index % 2 === 0) ? 'odd' : 'even';
+                            return `
+                                <tr class="${rowClass}">
+                                    <td class="rank"><span>${team.rank}</span></td>
+                                    <td class="team_logo">
+                                        <img src="${team.team_logo}" width="30" height="30" loading="lazy">
+                                    </td>
+                                    <td class="team">${team.team}</td>
+                                    <td class="pld">${team.played}</td>
+                                    <td class="won">${team.wins}</td>
+                                    <td class="draw">${team.draws}</td>
+                                    <td class="lost">${team.losses}</td>
+                                    <td class="match-left">${remainingMatches}</td>
+                                    <td class="goal-plus-minus">${team.goals_for}:${team.goals_against}</td>
+                                    <td class="diff">${diffGoals}</td>
+                                    <td class="pts"><strong>${team.points}</strong></td>
+                                </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>
+            `;
+
+            resultDiv.insertAdjacentHTML('beforeend', groupTable);
+        });
+
+    } catch (error) {
+        console.error('حدث خطأ أثناء تحميل بيانات الترتيب:', error);
+    }
+}
+
