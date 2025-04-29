@@ -66,6 +66,13 @@ h3.group-title {
     margin-top: 15px;
     margin-bottom: 5px;
 }
+.standings_jdwel thead tr {
+    background: #111111;
+    color: #fff;
+}
+.standings_jdwel thead tr th {
+    color: #fff;
+}
 .is-dark h3.group-title {
     background: #131313;
 }
